@@ -48,7 +48,7 @@
     return selfObject;
 }
 %new
-- (void)statusBarTapped:(UIPanGestureRecognizer *)gesture {
+- (void)statusBarTapped:(UITapGestureRecognizer *)gesture {
     
     SBLogWindowController *logWindowInstance = [objc_getClass("SBLogWindowController") sharedInstance];
     SBMainScreenActiveInterfaceOrientationWindow *logWindowObject = logWindowInstance.logWindow;
